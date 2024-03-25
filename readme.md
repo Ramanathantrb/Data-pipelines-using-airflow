@@ -47,8 +47,7 @@ start_operator  \
 
 ## Project Files
 
-This project workspace includes 2 folders: dags, plugins as shown in the following figure:
-![Project Explore!](./image/project-explore.PNG "sparkify")
+This project workspace includes 2 folders: dags, plugins 
 
 >- The **spakify_dag.py** includes all the imports, tasks and task dependencies <br>
 >- The **operators** folder includes 4 user defined operators  that will stage the data, transform the data, fill the data warehouse, and run checks on data quality. <br>
