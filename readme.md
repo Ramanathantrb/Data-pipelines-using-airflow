@@ -32,7 +32,7 @@ In the DAG, add default parameters according to these guidelines
 
 In addition, configure the task dependencies so that after the dependencies are set, the graph view follows the flow shown in the image below.
 
-![DAG!](./image/sparkify-dag.PNG "sparkify-dag")
+![DAG!](./image/sparkify-dag.png "sparkify-dag")
 
 **Configure the task dependencies**
 ```
