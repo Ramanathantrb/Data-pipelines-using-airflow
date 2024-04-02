@@ -33,7 +33,6 @@ class StageToRedshiftOperator(BaseOperator):
         self.s3_key = s3_key
         self.copy_json_option = copy_json_option
         self.region = region
-    
     def execute(self, context):
         self.log.info("Execute StageToRedshiftOperator")
         aws_hook = AwsHook(self.aws_credentials_id)
