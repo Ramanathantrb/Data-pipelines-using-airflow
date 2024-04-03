@@ -99,6 +99,7 @@ load_artist_dimension_table = LoadDimensionOperator(
     dag=dag
 )
 
+
 # Task load_time_dimension_table
 load_time_dimension_table = LoadDimensionOperator(
     task_id='Load_time_dim_table',
