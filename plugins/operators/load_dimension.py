@@ -43,13 +43,14 @@ class LoadDimensionOperator(BaseOperator):
                 select * from stage_{self.table};
             """
         else:
+            self.log.info("TRUNCATE dimension table")
+            redshift_hook.run(f"TRUNCATE TABLE {self.table};")
             table_insert_sql = f"""
                 insert into {self.table}
                 {self.select_sql}
             """
             
-            self.log.info("TRUNCATE dimension table")
-            redshift_hook.run(f"TRUNCATE TABLE {self.table};")
+            
         
         self.log.info("Loading data to dimension table in Redshift")
         redshift_hook.run(table_insert_sql)
