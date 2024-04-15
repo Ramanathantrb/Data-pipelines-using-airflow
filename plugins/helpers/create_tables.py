@@ -4,6 +4,7 @@ drop_and_create_tables="""CREATE TABLE public.artists (
 	location varchar(256),
 	lattitude numeric(18,0),
 	longitude numeric(18,0)
+ 
 );
 
 CREATE TABLE public.songplays (
